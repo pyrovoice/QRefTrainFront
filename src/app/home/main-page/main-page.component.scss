@@ -1,0 +1,17 @@
+.short-label {
+  width: 150px;
+
+  @media screen and (max-width: 768px) {
+    width: 20%;
+  }
+}
+
+input {
+  width: 0;
+  height: 0;
+  visibility: hidden;
+}
+
+.btn input[type="checkbox"]:checked{
+    box-shadow: 0 0 0 0.2rem rgba(108, 117, 125, 0.61);
+}

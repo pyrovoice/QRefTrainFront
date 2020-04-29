@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "quidditch-ref-training": {
+      "hosting": {
+        "QuidditchRefTraining-front": [
+          "quidditch-ref-training"
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,15 @@
+<app-content>
+    <div class="vw-100 vh-100 background">
+        <div class="h-100 pl-5 pr-5 pb-5 stick-right bg-white">
+            <div *ngIf="showLogin" [@loginAnimation] class="h-100">
+                <app-logging-page (emitterRegister)="loadRegister()" (emitterChangePassword)="loadChangePassword()"></app-logging-page>
+            </div>
+            <div *ngIf="showRegister" [@registerAnimation] class="h-100">
+                <app-register-page (emitterLogin)="loadLogin()"></app-register-page>
+            </div>
+            <div *ngIf="showChangePassword" [@changePasswordAnimation] class="h-100">
+                <app-forgot-password-page (emitterlogin)="loadLogin()"></app-forgot-password-page>
+            </div>
+        </div>
+    </div>
+</app-content>
