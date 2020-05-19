@@ -129,5 +129,8 @@
       }
     }
   },
-  "defaultProject": "QuidditchRefTraining-front"
+  "defaultProject": "QuidditchRefTraining-front",
+  "cli": {
+    "analytics": "77a795f9-f1f7-4151-9367-feafa2a250a5"
+  }
 }

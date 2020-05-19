@@ -15,4 +15,6 @@ export class QuizService {
   getQuestions(topics?: QuestionSubject[]): Observable<QuestionListDTO> {
     return this.apiService.get<QuestionListDTO>('question/topics', topics);
   }
+
+  
 }
