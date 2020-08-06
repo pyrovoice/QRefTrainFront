@@ -1,8 +1,28 @@
-<button class="btn btn-primary" (click)="startQuiz()">Start a training</button>
-<button class="btn btn-link" (click)="toggleDisplayOptions()">Show more options</button>
-<div *ngIf="displayOptions" class="d-flex flex-row flex-wrap">
-  <label *ngFor="let topic of topics()" class="btn btn-secondary shortLabel">
-    <input type="checkbox" [value]="topic" (change)="onCheckboxChange($event)" />{{topic}}
-  </label>
-</div> 
-  
+<div class="container">
+  <div>
+    <button class="btn btn-primary" (click)="startQuiz()">
+      Start a training
+    </button>
+  </div>
+  <div>
+    <button class="btn btn-link mb-3" (click)="toggleDisplayOptions()">
+      Show more options
+    </button>
+  </div>
+  <div
+    *ngIf="displayOptions"
+    class="d-flex flex-row justify-content-between flex-wrap"
+  >
+    <label
+      *ngFor="let topic of topics()"
+      class="btn btn-secondary short-label"
+      [ngClass]="{ selected: isSelected(topic) }"
+    >
+      <input
+        type="checkbox"
+        [value]="topic"
+        (change)="onCheckboxChange($event)"
+      />{{ topic }}
+    </label>
+  </div>
+</div>

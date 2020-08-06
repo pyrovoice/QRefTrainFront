@@ -16,11 +16,11 @@ export class AdminComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  importQuestionFromDrive(){
-    this.adminService.loadQuestionsFromGoogleDrive().subscribe(r => {
-      this.adminService.loadNonDepreciatedQuestions().subscribe(questions =>{
-        this.questions = questions;
-      })
+  importQuestionFromDrive() {
+    this.adminService.loadQuestionsFromGoogleDrive().subscribe(questions => {
+      console.log("Success");
+      console.log(questions);
+      this.questions = questions;
     }, error => {
       this.error = true;
     })

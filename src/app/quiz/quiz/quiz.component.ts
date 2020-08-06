@@ -55,14 +55,11 @@ export class QuizComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    
-    /*
     this.route.queryParamMap.subscribe(params => this.selectedOptions = params.getAll('topic'));
     this.quizService.getQuestions(this.selectedOptions).subscribe(response => {
       this.questions = this.getQuestionsFromDTO(response);
     });
-    */
-   this.updateURL();
+    this.updateURL();
   }
 
   getQuestionsFromDTO(questionDTOs: QuestionListDTO) {
@@ -79,8 +76,8 @@ export class QuizComponent implements OnInit {
     this.updateURL();
   }
 
-  
-  updateURL(){
+
+  updateURL() {
     this.currentVideoURL = this.getSourceURL(this.currentQuestion.URLVideo);
   }
 

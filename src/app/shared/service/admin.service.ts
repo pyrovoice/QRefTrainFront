@@ -10,15 +10,15 @@ import { QuestionSubject } from '../enum/question-topic.enum';
   export class AdminService {
     constructor(private apiService: ApiService) { }
 
-    loadQuestionsFromGoogleDrive(){
-        return this.apiService.post<boolean, null>("admin/loadfromdrive", null);
+    loadQuestionsFromGoogleDrive(): Observable<Question[]>{
+        return this.apiService.get<Question[]>("admin/loadfromdrive", null);
     }
 
     loadAllQuestions(){
       return this.apiService.get<Question[]>("question/getAllQuestions", null);
     }
 
-    loadNonDepreciatedQuestions(questionSubjects: QuestionSubject){
-      return this.apiService.get<Question[]>("question/getNonDepreciatedQuestions", questionSubjects);
+    loadNonDepreciatedQuestions(questionSubjects?: QuestionSubject){
+      return this.apiService.get<Question[]>("question/getquestionsbysubjects", questionSubjects);
     }
   }
