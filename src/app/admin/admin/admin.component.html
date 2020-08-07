@@ -1,12 +1,39 @@
 <button (click)="importQuestionFromDrive()">Import question to drive</button>
 <div *ngIf="error">ERROR BITCH</div>
-<table *ngIf="questions != null && questions.length > 0">
-    <tr>
-        <th>Name</th>
-    </tr>
-    <tr *ngFor="let question of questions">
-     <td>{{question.questionText}}</td>
-     <td>{{question.URLVideo}}</td>
-
-    </tr>
+<ng-container *ngIf="importResult != null">
+  <h3>Questions added</h3>
+<table>
+  <tr>
+    <th>Text</th>
+    <th>URL</th>
+  </tr>
+  <tr *ngFor="let question of importResult.questionsAdded">
+    <td>{{ question.questionText }}</td>
+    <td>{{ question.URLVideo }}</td>
+  </tr>
 </table>
+
+<h3>Questions removed</h3>
+<table>
+  <tr>
+    <th>Text</th>
+    <th>URL</th>
+  </tr>
+  <tr *ngFor="let question of importResult.questionsRemoved">
+    <td>{{ question.questionText }}</td>
+    <td>{{ question.URLVideo }}</td>
+  </tr>
+</table>
+<h3>Questions Untouched</h3>
+<table>
+  <tr>
+    <th>Text</th>
+    <th>URL</th>
+  </tr>
+  <tr *ngFor="let question of importResult.questionsUntouched">
+    <td>{{ question.questionText }}</td>
+    <td>{{ question.URLVideo }}</td>
+  </tr>
+</table>
+
+</ng-container>
