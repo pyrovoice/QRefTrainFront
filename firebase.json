@@ -1,19 +1,10 @@
 {
-  "hosting": [
-    {
-      "target": "QuidditchRefTraining-front",
-      "public": "dist/QuidditchRefTraining-front",
-      "ignore": [
-        "firebase.json",
-        "**/.*",
-        "**/node_modules/**"
-      ],
-      "rewrites": [
-        {
-          "source": "**",
-          "destination": "/index.html"
-        }
-      ]
-    }
-  ]
+  "hosting": {
+    "public": "dist/quidhub",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
 }

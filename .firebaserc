@@ -1,9 +1,12 @@
 {
+  "projects": {
+    "default": "quidhub"
+  },
   "targets": {
-    "quidditch-ref-training": {
+    "quidhub": {
       "hosting": {
-        "QuidditchRefTraining-front": [
-          "quidditch-ref-training"
+        "quidhub": [
+          "quidhub"
         ]
       }
     }

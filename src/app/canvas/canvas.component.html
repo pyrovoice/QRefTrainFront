@@ -1,0 +1,20 @@
+<div class="d-flex">
+  <canvas width="815" height="752" #canvas oncontextmenu="return false;"></canvas>
+  <app-controls [controls]="controls" (emitter)="handleControlEmit($event)" class="ml-2"></app-controls>
+</div>
+<!--
+<button hidden (click)="onContextMenu($event, contextMenuTrigger, {})" style="pointer-events:none">
+  Open Context Menu
+</button>
+
+<div #contextMenuTrigger="matMenuTrigger" [matMenuTriggerFor]="contextMenu">
+  <mat-menu #contextMenu="matMenu" [hasBackdrop]="false"  >
+    <ng-template matMenuContent let-data="data">
+      <button mat-menu-item>
+        <mat-icon>delete_forever</mat-icon>
+        <span>Delete</span>
+      </button>
+    </ng-template>
+  </mat-menu>
+</div>
+-->

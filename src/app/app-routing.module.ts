@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { ContentComponent } from './shared/components/content/content.component';
-import { HttpInterceptorService } from './shared/interceptor/interceptor.service';
+import { CanvasComponent } from './canvas/canvas.component';
 
 
 const routes: Routes = [
@@ -15,12 +14,15 @@ const routes: Routes = [
     path: 'admin', loadChildren: () => import('./admin/admin.module').then(m => m.AdminModule)
   },
   {
-    path: '', redirectTo: 'homepage', pathMatch: 'full'
+    path: 'strategy', component: CanvasComponent
+  },
+  {
+    path: '', redirectTo: 'strategy', pathMatch: 'full'
   },
   {
     path: "**",
     pathMatch: "full",
-    redirectTo: "homepage"
+    redirectTo: "strategy"
   },
 ];
 
