@@ -17,12 +17,12 @@ const routes: Routes = [
     path: 'strategy', component: CanvasComponent
   },
   {
-    path: '', redirectTo: 'strategy', pathMatch: 'full'
+    path: '', redirectTo: 'homepage', pathMatch: 'full'
   },
   {
     path: "**",
     pathMatch: "full",
-    redirectTo: "strategy"
+    redirectTo: "homepage"
   },
 ];
 
