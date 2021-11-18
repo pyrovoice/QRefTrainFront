@@ -50,7 +50,7 @@ export class CanvasComponent implements AfterViewInit {
     humans: Human[] = [{name:"", team: this.redTeam, playerClass: PlayerClass.CHASER, hasBall: false, position: { x: 401, y: 158 }},
     { name:"", team: this.redTeam, playerClass: PlayerClass.BEATER, hasBall: true, position: { x: 342, y: 650 } },
     { name:"", team: this.redTeam, playerClass: PlayerClass.BEATER, hasBall: false, position: { x: 446, y: 650 } },
-    { name:"", team: this.redTeam, playerClass: PlayerClass.KEEPER, hasBall: true, position: { x: 398, y: 700 } },
+    { name:"RENAME ME", team: this.redTeam, playerClass: PlayerClass.KEEPER, hasBall: true, position: { x: 398, y: 700 } },
     { name:"", team: this.redTeam, playerClass: PlayerClass.CHASER, hasBall: false, position: { x: 670, y: 604 } },
     { name:"", team: this.redTeam, playerClass: PlayerClass.CHASER, hasBall: false, position: { x: 99, y: 588 } },
 
@@ -221,7 +221,6 @@ export class CanvasComponent implements AfterViewInit {
     }
 
     openMenu(x: number, y: number){
-        console.log("Called ")
         // @ts-ignore
         const triggerElement: HTMLElement = this.trigger._element.nativeElement;
         triggerElement.style.setProperty('left', `${x}px`);

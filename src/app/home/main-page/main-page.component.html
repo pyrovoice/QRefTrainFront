@@ -1,11 +1,29 @@
 <div class="container">
+  <nav class="navbar navbar-expand-lg navbar-light border-bottom">
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link"(click)="startQuiz()">Quiz</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" (click)="startStrategy()">Strategy</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" >Question list (incoming)</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
   <div>
     <button class="btn btn-primary" (click)="startQuiz()">
-      Start a training
+      Start a Quiz
     </button>
   </div>
   <div>
-    <button class="btn btn-link mb-3" (click)="toggleDisplayOptions()">
+    <button class="btn btn-link mb-3 d-none" (click)="toggleDisplayOptions()">
       Show more options
     </button>
   </div>

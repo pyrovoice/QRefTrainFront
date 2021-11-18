@@ -15,13 +15,15 @@ export class LocalQuizService {
 
   private questions: Question[] = null;
   
-   async getQuestions(topics?: QuestionSubject[]): Promise<Question[]> {
+   async getQuestions(nbrQuestion: number, topics?: QuestionSubject[]): Promise<Question[]> {
       if(this.questions == null){
          await this.adminService.loadNonDepreciatedQuestions().then(questions => {
-           console.log("getQeustions: ", questions);
             this.questions = questions;
          })
       }
-    return this.questions;
+      const shuffled = this.questions.sort(() => 0.5 - Math.random());
+
+    let selected = shuffled.slice(0, nbrQuestion);
+    return selected;
   }
 }

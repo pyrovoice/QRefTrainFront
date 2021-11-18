@@ -11,6 +11,7 @@ export class CanvasDrawer{
     ballSize = 8;
     ballDistanceToPlayerx = 20;
     playerHeadbandSize = 4;
+    nameDistanceToPlayer = 30;
 
     constructor(context: CanvasRenderingContext2D) {
         this.context = context;
@@ -28,6 +29,10 @@ export class CanvasDrawer{
 
       drawPlayer(human: Human, selectedMoveables: Moveable[]) {
         if (!this.context) { return; }
+        
+
+        
+        
         //var center = this.getOffsetCoordinatesForHuman(human.position.x, human.position.y);
         var center = {x: human.position.x, y: human.position.y}
         this.context.beginPath();
@@ -35,6 +40,12 @@ export class CanvasDrawer{
         this.context.lineWidth = this.playerHeadbandSize;
         this.context.strokeStyle = human.playerClass != PlayerClass.BEATER ? "#000000" : "#FFFFFF";
         this.context.stroke();
+
+        if(selectedMoveables.indexOf(human) != -1){
+            this.context.strokeStyle = "rgba(0, 0, 0, 0.3)";
+            this.context.lineWidth = 1;
+            this.context.strokeRect(center.x -20, center.y -20, 40, 40);
+        }
 
         this.context.beginPath();
         this.context.arc(center.x, center.y, this.playerSize, 0, 2 * Math.PI, false);
@@ -55,13 +66,7 @@ export class CanvasDrawer{
             this.context.stroke();
         }
 
-        if(selectedMoveables.indexOf(human) != -1){
-            this.context.strokeStyle = "rgba(255, 5, 5, 0.3)";
-            this.context.lineWidth = 2;
-            this.context.strokeRect(center.x -20, center.y -20, 40, 40);
-        }
-
-        if(human.name != null && human.name != undefined ){
+        /* if(human.name != null && human.name != undefined ){
             this.context.lineWidth = 1;
             this.context.strokeStyle = "#000000";
             this.context.fillStyle  = "#FFFFFF";
@@ -69,6 +74,15 @@ export class CanvasDrawer{
             this.context.textAlign = "center";
             this.context.fillText(human.name, center.x , center.y -20);
             this.context.strokeText(human.name, center.x, center.y -20);
+        } */
+
+        if(human.name != null && human.name != "" ){
+            var nameOffest = human.team.facingTop ? this.nameDistanceToPlayer : -this.nameDistanceToPlayer;
+            this.context.lineWidth = 1;
+            this.context.strokeStyle  = "#000000";
+            this.context.font = "12px Arial";
+            this.context.textAlign = "center";
+            this.context.strokeText(human.name.toUpperCase(), center.x, center.y +nameOffest);
         }
     }
 
@@ -109,7 +123,7 @@ export class CanvasDrawer{
             case PlayerClass.KEEPER:
                 return "#00ad34"
             case PlayerClass.SEEKER:
-                return "#ffff66"
+                return "#e8e846"
             default:
                 return "#FFFFFF";
         }

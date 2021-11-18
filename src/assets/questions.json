@@ -73,7 +73,7 @@
       "PublicId": "10",
       "QuestionText": "What of the followings are true (If unspecified, for the quaffle carrier)",
       "GoodAnswers": "No penalty",
-      "BadAnswers": "Cards\r\nDefending player should receive the same penalty\r\nTurnover",
+      "BadAnswers": "Blue Card\r\nYellowCard\r\nRed Card\r\nDefending player should receive the same penalty\r\nTurnover",
       "AnswerExplanation": "While this could be considered a charge (illegal in the air), the intent of the player is also important. here players don't play the opponent's body, as a charge would, but instead jump for the goal.",
       "NGB": "ALL",
       "Link": "https://gfycat.com/ifr/wearypowerfulhammerkop"
@@ -91,7 +91,7 @@
       "PublicId": "12",
       "QuestionText": "What penalty should green player receive?",
       "GoodAnswers": "No penalty",
-      "BadAnswers": "Cards",
+      "BadAnswers": "Blue Card\r\nYellowCard\r\nRed Card",
       "AnswerExplanation": "Body blocking that way is legal even without a ball involved. Carefull, a body block has force applied AFTER contact is initiated, not before.",
       "NGB": "ALL",
       "Link": "https://gfycat.com/ifr/fastwickedcoelacanth"
@@ -100,7 +100,7 @@
       "PublicId": "13",
       "QuestionText": "What penalty should green player receive?",
       "GoodAnswers": "No penalty",
-      "BadAnswers": "Cards",
+      "BadAnswers": "Blue Card\r\nYellowCard\r\nRed Card",
       "AnswerExplanation": "Push a player that way is legal even without a ball involed. Carefull, a push should not involve excessive force or force before the contact.",
       "NGB": "ALL",
       "Link": "https://gfycat.com/ifr/shimmeringthankfullhasaapso"
@@ -109,7 +109,7 @@
       "PublicId": "14",
       "QuestionText": "What penalty should yellow player receive?",
       "GoodAnswers": "Yellow Card",
-      "BadAnswers": "No penalty\r\nCards",
+      "BadAnswers": "No penalty\r\nBlue Card\r\nYellowCard\r\nRed Card",
       "AnswerExplanation": "Yellow player already has force as the contact begin, qualifying this contact for a charge. Charges are illegal without a ball involved.",
       "NGB": "ALL",
       "Link": "https://gfycat.com/ifr/plusheasygoingbooby"
@@ -118,7 +118,7 @@
       "PublicId": "15",
       "QuestionText": "What penalty should yellow player receive?",
       "GoodAnswers": "Yellow Card",
-      "BadAnswers": "No penalty\r\nCards",
+      "BadAnswers": "No penalty\r\nBlue Card\r\nYellowCard\r\nRed Card",
       "AnswerExplanation": "Green player had her hand on the ball, thus making the kick illegal.",
       "NGB": "ALL",
       "Link": "https://gfycat.com/ifr/reflectingimmaculatecaiman"
@@ -127,7 +127,7 @@
       "PublicId": "16",
       "QuestionText": "What penalty should yellow player receive?",
       "GoodAnswers": "Yellow Card",
-      "BadAnswers": "No penalty\r\nCards",
+      "BadAnswers": "No penalty\r\nBlue Card\r\nYellowCard\r\nRed Card",
       "AnswerExplanation": "Green player had to remove her hand to not get kicked, making it an illegal kick.",
       "NGB": "ALL",
       "Link": "https://gfycat.com/ifr/adolescentanybunny"
@@ -136,7 +136,7 @@
       "PublicId": "17",
       "QuestionText": "What penalty should yellow player receive?",
       "GoodAnswers": "No penalty",
-      "BadAnswers": "Cards",
+      "BadAnswers": "Blue Card\r\nYellowCard\r\nRed Card",
       "AnswerExplanation": "While green player's hand was close, yellow player hit the ball before it was touching the ball.",
       "NGB": "ALL",
       "Link": "https://gfycat.com/ifr/largeembellishedgalapagossealion"
@@ -145,7 +145,7 @@
       "PublicId": "18",
       "QuestionText": "What penalty should yellow player receive?",
       "GoodAnswers": "No penalty",
-      "BadAnswers": "Cards",
+      "BadAnswers": "Blue Card\r\nYellowCard\r\nRed Card",
       "AnswerExplanation": "While yellow player kicks the ball as green player touched it, the kick was severely restrained when yellow player realized it would be an illegal kick. In this case, use no harm no foul.",
       "NGB": "ALL",
       "Link": "https://gfycat.com/ifr/simplisticspiritedcero"
@@ -168,7 +168,7 @@
     },
     {
       "Public Id": "3",
-      "QuestionText": "Since the red carded player may not play the match again, it is a different player that must go into the penalty box and be released.",
+      "QuestionText": "Which of the followings are true for a red card call ?",
       "GoodAnswers": "Any ball acted upon or prevented to get by the fouling player is turned over\r\nQuaffle is turned over\r\nA Player is released after two minutes",
       "BadAnswers": "A Player is released after a minute\r\nA Player is released after getting scored",
       "AnswerExplanation": "Since the red carded player may not play the match again, it is a different player that must go into the penalty box and be released.",
@@ -312,7 +312,7 @@
       "Public Id": "6",
       "QuestionText": "What penalty should yellow player receive?",
       "GoodAnswers": "Yellow Card",
-      "BadAnswers": "No penalty\r\nTurnover\r\nCards",
+      "BadAnswers": "No penalty\r\nTurnover\r\nBlue Card\r\nRed Card",
       "AnswerExplanation": "It is illegal to steal a ball from a protected keeper.",
       "NGB": "ALL",
       "Link": "https://gfycat.com/ifr/unimportantshamelessandeancondor"
@@ -330,7 +330,7 @@
       "Public Id": "8",
       "QuestionText": "What penalty should yellow player receive?",
       "GoodAnswers": "No penalty",
-      "BadAnswers": "Cards\r\nTurnover",
+      "BadAnswers": "Blue Card\r\nYellowCard\r\nRed Card\r\nTurnover",
       "AnswerExplanation": "The keeper stopped being protected once out of the zone, and cannot become protected again until the opposing team controls the quaffle.",
       "NGB": "ALL",
       "Link": "https://gfycat.com/ifr/deadlycompleteboubou"
@@ -338,8 +338,8 @@
     {
       "Public Id": "9",
       "QuestionText": "Which of the followings are true?",
-      "GoodAnswers": "SoleControlAnswer2",
-      "BadAnswers": "SoleControlAnswer1",
+      "GoodAnswers": "Play should keep going",
+      "BadAnswers": "The keeper should get the quaffle, ending yellow's attack",
       "AnswerExplanation": "The keeper must be the sole owner of the quaffle to be protected. Since yellow player is contesting it, play keeps going.",
       "NGB": "ALL",
       "Link": "https://gfycat.com/ifr/hardliquidindianpalmsquirrel"
@@ -808,7 +808,7 @@
       "Public Id": "7",
       "QuestionText": "Which of the followings are true?",
       "GoodAnswers": "Turnover\r\nBack to hoops",
-      "BadAnswers": "Cards",
+      "BadAnswers": "Blue Card\r\nYellowCard\r\nRed Card",
       "AnswerExplanation": "Caution: if the opposing team controls two bludgers, this bludger cannot be turned over. Only apply the back to hoops penalty in this case.",
       "NGB": "ALL",
       "Link": "https://gfycat.com/ifr/coldfarawaygoral"
@@ -816,8 +816,8 @@
     {
       "Public Id": "8",
       "QuestionText": "Which of the followings are true?",
-      "GoodAnswers": "YellowPlayerRetrieveBludger",
-      "BadAnswers": "GreenPlayerRetrieveBludger",
+      "GoodAnswers": "Yellow player should retrieve the bludger",
+      "BadAnswers": "Green player should retrieve the bludger",
       "AnswerExplanation": "Yellow player is closest when the bludger goes out, so she gets priority.",
       "NGB": "ALL",
       "Link": "https://gfycat.com/ifr/necessaryposhfinnishspitz"
@@ -825,17 +825,17 @@
     {
       "Public Id": "9",
       "QuestionText": "Which of the followings are true?",
-      "GoodAnswers": "GreenPlayerRetrieveBludger",
-      "BadAnswers": "YellowPlayerRetrieveBludger",
-      "AnswerExplanation": "While yellow player is closest when the bludger goes out, she is not elligible because she already own a bludger. The next closest player is green, so she can retrieve the bludger thrown.",
+      "GoodAnswers": "Green player should retrieve the bludger",
+      "BadAnswers": "Yellow player should retrieve the bludger",
+      "AnswerExplanation": "While yellow player is closest when the bludger goes out, she is not elligible because she already owns a bludger. The next closest player is green, so she can retrieve the bludger thrown.",
       "NGB": "ALL",
       "Link": "https://gfycat.com/ifr/hatefulglisteningjapanesebeetle"
     },
     {
       "Public Id": "10",
       "QuestionText": "Which of the followings are true?",
-      "GoodAnswers": "YellowPlayerRetrieveBludger",
-      "BadAnswers": "GreenPlayerRetrieveBludger",
+      "GoodAnswers": "Yellow player should retrieve the bludger",
+      "BadAnswers": "Green player should retrieve the bludger",
       "AnswerExplanation": "As green is the closest elligible player when the bludger goes out, she is the one who can retrieve the bludger at the start. However, after the beat, the next closest elligible player become the yellow player.",
       "NGB": "ALL",
       "Link": "https://gfycat.com/ifr/embarrassedfrighteningeasternglasslizard"
@@ -843,8 +843,8 @@
     {
       "Public Id": "11",
       "QuestionText": "Which of the followings are true?",
-      "GoodAnswers": "YellowPenalized",
-      "BadAnswers": "GreenIsBeat\r\nNo penalty",
+      "GoodAnswers": "Yellow player should be penalized",
+      "BadAnswers": "Green player is beat\r\nNo penalty",
       "AnswerExplanation": "Once outside the pitch, green player becomes immune. Yellow player is willingly throwing a ball with the intention of sending it out of pitch, which is illegal. (Blue card)",
       "NGB": "ALL",
       "Link": "https://gfycat.com/ifr/wickedglamorousdiamondbackrattlesnake"
@@ -853,16 +853,16 @@
       "Public Id": "12",
       "QuestionText": "Which of the followings are true?",
       "GoodAnswers": "No penalty",
-      "BadAnswers": "GreenIsBeat\r\nYellowPenalized",
+      "BadAnswers": "Green player is beat\r\nYellow player should be penalized",
       "AnswerExplanation": "A feet outside is enough for green player to become immune. Consequently, Yellow player is willingly throwing a ball with the intention of sending it out of pitch, which is illegal. (Blue card)",
       "NGB": "ALL",
       "Link": "https://gfycat.com/ifr/ampleneatbass"
     },
     {
       "Public Id": "13",
-      "QuestionText": "InboundingQuaffle",
-      "GoodAnswers": "Clip2",
-      "BadAnswers": "Clip1",
+      "QuestionText": "Which way is correct to inbound a quaffle?",
+      "GoodAnswers": "Clip 2",
+      "BadAnswers": "Clip 1",
       "AnswerExplanation": "A quaffle has to be inbounded to the point where it left the field.",
       "NGB": "ALL",
       "Link": "https://gfycat.com/ifr/generalillustriousivorybackedwoodswallow"
@@ -871,7 +871,7 @@
       "Public Id": "14",
       "QuestionText": "Which of the followings are true?",
       "GoodAnswers": "Turnover\r\nBack to hoops",
-      "BadAnswers": "Cards",
+      "BadAnswers": "Blue Card\r\nYellowCard\r\nRed Card",
       "AnswerExplanation": "The quaffle cannot be thrown in. Also, the player has 5 seconds to inbound any ball.",
       "NGB": "ALL",
       "Link": "https://gfycat.com/ifr/shamelesscomfortablegnatcatcher"
@@ -879,8 +879,8 @@
     {
       "Public Id": "15",
       "QuestionText": "Which of the followings are true?",
-      "GoodAnswers": "GreenPlayerRetrieveQuaffle",
-      "BadAnswers": "YellowPlayerRetrieveQuaffle",
+      "GoodAnswers": "The green player should retrieve the quaffle",
+      "BadAnswers": "The yellow player should retrieve the quaffle",
       "AnswerExplanation": "For the quaffle, except some specific cases, the team that can retrieve the quaffle is always the team that did not threw it outside.",
       "NGB": "ALL",
       "Link": "https://gfycat.com/ifr/secondhandtestycarpenterant"
@@ -888,8 +888,8 @@
     {
       "Public Id": "16",
       "QuestionText": "Which of the followings are true?",
-      "GoodAnswers": "GreenIsBeat",
-      "BadAnswers": "YellowPenalized\r\nNo penalty",
+      "GoodAnswers": "Green player is beat",
+      "BadAnswers": "Yellow player should be penalized\r\nNo penalty",
       "AnswerExplanation": "The green player does not become immune until she reaches outside the field.",
       "NGB": "ALL",
       "Link": "https://gfycat.com/ifr/disgustinglimitedclownanemonefish"
@@ -901,7 +901,6 @@
       "QuestionText": "What is the penalty for changing position or location after brooms down, at the beginning of a match ?",
       "GoodAnswers": "Blue Card",
       "BadAnswers": "Yellow Card\r\nRed Card\r\nBack to hoops",
-      "AnswerExplanation": "QuestionChangeAfterBroomsDownExplanation",
       "NGB": "ALL"
     },
     {
@@ -917,37 +916,34 @@
       "QuestionText": "What is the penalty for an illegal timeout request ?",
       "GoodAnswers": "Blue Card",
       "BadAnswers": "Turnover\r\nRed Card\r\nYellow Card",
-      "AnswerExplanation": "QuestionIllegalTimeoutRequestExplanation",
       "NGB": "ALL"
     },
     {
       "Public Id": "4",
       "QuestionText": "What happens when a turnover is called, but no elligible player may receive the turned-over ball ?",
-      "GoodAnswers": "QuestionTurnoverWhenNoElligibleAnswer1",
+      "GoodAnswers": "The ball is placed at the hoops of the fouled team",
       "BadAnswers": "The ball is unplayable until the fouled team plays it\r\nThe turnover is cancelled",
-      "AnswerExplanation": "QuestionTurnoverWhenNoElligibleExplanation",
       "NGB": "ALL"
     },
     {
       "Public Id": "5",
       "QuestionText": "Two players of the same team are in the penalty box serving a yellow penalty when their team get scored against?",
-      "GoodAnswers": "QuestionMultiplePlayersInBoxWhenScoreAnswer1",
+      "GoodAnswers": "The player with the least remaining time is released",
       "BadAnswers": "Both players are released\r\nThe team chooses who gets released first",
-      "AnswerExplanation": "QuestionMultiplePlayersInBoxWhenScoreExplanation",
       "NGB": "ALL"
     },
     {
       "Public Id": "6",
       "QuestionText": "A player do a blue or yellow card offense causing an advantage. After the fouled team scores, the referee gives the card to the player.",
-      "GoodAnswers": "QuestionYellowDuringAdvantageAnswer3",
+      "GoodAnswers": "The player keeps playing",
       "BadAnswers": "The player goes to the penalty box\r\nThe player must go back to hoops",
       "AnswerExplanation": "Since the foul happened before the score, it would have released the player. In this case, the player is not sent to the penalty box and keeps playing.",
       "NGB": "ALL"
     },
     {
       "Public Id": "7",
-      "QuestionText": "Both players stay in position but cannot fight for the ball during broom's down",
-      "GoodAnswers": "BothGripBallStoppageAnswer2",
+      "QuestionText": "Two opposing players have a grip on a ball when a broom's down is called. Which is correct ?",
+      "GoodAnswers": "Both players stay in position but cannot fight for the ball during broom's down",
       "BadAnswers": "Both players must release the ball to the ground, then can restart attacking it on broom's up\r\nBoth players must release the ball to the ground while broom's down, but can grab it again before broom's up.\r\nBoth players stay in position during broom's down and can try to get a better gripping on the ball before broom's up.",
       "AnswerExplanation": "It's a good idea to have an assistant watch the situation during broom's down.",
       "NGB": "ALL"
@@ -956,7 +952,7 @@
       "Public Id": "8",
       "QuestionText": "Assuming the player went in a bit farther than the official indicated, which of the following is true?",
       "GoodAnswers": "No penalty",
-      "BadAnswers": "Cards",
+      "BadAnswers": "Blue Card\r\nYellowCard\r\nRed Card",
       "AnswerExplanation": "While the player did not went in exactly where the official requested him to, the difference is not significant enough to warrant a penalty.",
       "NGB": "ALL",
       "Link": "https://gfycat.com/ifr/clumsynegligiblegoldenretriever"
@@ -964,8 +960,8 @@
     {
       "Public Id": "9",
       "QuestionText": "Which of the followings are true?",
-      "GoodAnswers": "RepeatProcedure",
-      "BadAnswers": "Cards\r\nNo penalty",
+      "GoodAnswers": "Repeat Procedure",
+      "BadAnswers": "Blue Card\r\nYellowCard\r\nRed Card\r\nNo penalty",
       "AnswerExplanation": "The KO procedure requires the player to remove their broom, touch the hoop then remount their broom. Note that affecting play after a wrong procedure would have been a yellow card.",
       "NGB": "ALL",
       "Link": "https://gfycat.com/ifr/sereneagedfanworms"
@@ -973,8 +969,8 @@
     {
       "Public Id": "10",
       "QuestionText": "Which of the followings are true?",
-      "GoodAnswers": "RepeatProcedure",
-      "BadAnswers": "Cards\r\nNo penalty",
+      "GoodAnswers": "Repeat Procedure",
+      "BadAnswers": "Blue Card\r\nYellowCard\r\nRed Card\r\nNo penalty",
       "AnswerExplanation": "While the player start to remove its broom, the brooms does not leave their legs completely. The procedure is not correct. This is important during games where beater will want to gain time after being beat near a hoop.",
       "NGB": "ALL",
       "Link": "https://gfycat.com/ifr/smallscarceacornweevil"
@@ -992,7 +988,7 @@
       "PublicId": "2",
       "QuestionText": "What is the penalty for the Quaffle Carrier?",
       "GoodAnswers": "Reset used",
-      "BadAnswers": "No penalty\r\nCards",
+      "BadAnswers": "No penalty\r\nBlue Card\r\nYellowCard\r\nRed Card",
       "AnswerExplanation": "A player physically forced behind the midfield line does not use its team's reset, under the condition that he or she makes the Quaffle cross the line back as soon as reasonnably possible.",
       "NGB": "ALL",
       "Link": "https://gfycat.com/ifr/unitedwickeddromedary"
@@ -1001,7 +997,7 @@
       "PublicId": "5",
       "QuestionText": "What is the penalty for the Quaffle Carrier?",
       "GoodAnswers": "Reset used",
-      "BadAnswers": "No penalty\r\nTurnover\r\nCards",
+      "BadAnswers": "No penalty\r\nTurnover\r\nBlue Card\r\nYellowCard\r\nRed Card",
       "AnswerExplanation": "A player menaced by an opposing beater may cross the midline without it being an illegal reset, but still use a reset for his team.",
       "NGB": "ALL",
       "Link": "https://gfycat.com/ifr/coordinatedthirstychimneyswift"
@@ -1010,7 +1006,7 @@
       "PublicId": "6",
       "QuestionText": "What is the penalty for the Quaffle Carrier?",
       "GoodAnswers": "Reset used",
-      "BadAnswers": "No penalty\r\nTurnover\r\nCards",
+      "BadAnswers": "No penalty\r\nTurnover\r\nBlue Card\r\nYellowCard\r\nRed Card",
       "AnswerExplanation": "A player menaced by an opposing beater may cross the midline without it being an illegal reset, but still use a reset for his team.",
       "NGB": "ALL",
       "Link": "https://gfycat.com/ifr/unitedredarchaeocete"
@@ -1019,7 +1015,7 @@
       "PublicId": "7",
       "QuestionText": "What is the penalty for the Quaffle Carrier?",
       "GoodAnswers": "Reset used",
-      "BadAnswers": "Turnover\r\nCards",
+      "BadAnswers": "Turnover\r\nBlue Card\r\nYellowCard\r\nRed Card",
       "AnswerExplanation": "A player crossing two lines in a single run is considered having used only one reset.",
       "NGB": "ALL",
       "Link": "https://gfycat.com/ifr/astonishinghappygoluckyafghanhound"
@@ -1028,7 +1024,7 @@
       "PublicId": "8",
       "QuestionText": "What is the penalty for the Quaffle Carrier?",
       "GoodAnswers": "Reset used",
-      "BadAnswers": "Turnover\r\nCards",
+      "BadAnswers": "Turnover\r\nBlue Card\r\nYellowCard\r\nRed Card",
       "AnswerExplanation": "A player passing across two lines is considered having used only one reset, as it is a single action.",
       "NGB": "ALL",
       "Link": "https://gfycat.com/ifr/enchantingrecentafricanelephant"
@@ -1037,7 +1033,7 @@
       "PublicId": "9",
       "QuestionText": "QuestionResetRandom",
       "GoodAnswers": "Turnover",
-      "BadAnswers": "Reset used\r\nCards\r\nNo penalty",
+      "BadAnswers": "Reset used\r\nBlue Card\r\nYellowCard\r\nRed Card\r\nNo penalty",
       "AnswerExplanation": "A player throwing behind crossing a reset line, or further into his own half, without anyone to receive perpetrates an illegal reset.",
       "NGB": "ALL",
       "Link": "https://gfycat.com/ifr/talkativemadeupindianhare"
@@ -1046,7 +1042,7 @@
       "PublicId": "10",
       "QuestionText": "QuestionResetRandom",
       "GoodAnswers": "Turnover",
-      "BadAnswers": "Reset used\r\nCards\r\nNo penalty",
+      "BadAnswers": "Reset used\r\nBlue Card\r\nYellowCard\r\nRed Card\r\nNo penalty",
       "AnswerExplanation": "A player throwing behind crossing a reset line, or further into his own half, without knowing if anyone is here to receive perpetrates an illegal reset. Carefull not to penalize a player that knows where their teammates are without having to look.",
       "NGB": "ALL",
       "Link": "https://gfycat.com/ifr/decimalshadowyleafhopper"
@@ -1055,7 +1051,7 @@
       "PublicId": "11",
       "QuestionText": "What is the penalty for the Quaffle Carrier?",
       "GoodAnswers": "Reset used",
-      "BadAnswers": "Turnover\r\nCards",
+      "BadAnswers": "Turnover\r\nBlue Card\r\nYellowCard\r\nRed Card",
       "AnswerExplanation": "A player has to be there when the ball arrives for the pass to be considered valid, regardless of the state of the player at the beginning of the pass.",
       "NGB": "ALL",
       "Link": "https://gfycat.com/ifr/ordinaryglorioUsqntelopegroundsquirrel"
@@ -1064,7 +1060,7 @@
       "PublicId": "12",
       "QuestionText": "What is the penalty for the quaffle carrier's team?",
       "GoodAnswers": "Turnover",
-      "BadAnswers": "Reset used\r\nCards",
+      "BadAnswers": "Reset used\r\nBlue Card\r\nYellowCard\r\nRed Card",
       "AnswerExplanation": "The pass during the run back creates two separate reset actions, which triggers the illegal reset.",
       "NGB": "ALL",
       "Link": "https://gfycat.com/ifr/graciouscalculatingandeancat"
@@ -1073,7 +1069,7 @@
       "PublicId": "13",
       "QuestionText": "What is the penalty for the Quaffle Carrier?",
       "GoodAnswers": "No penalty",
-      "BadAnswers": "Reset used\r\nCards\r\nTurnover",
+      "BadAnswers": "Reset used\r\nBlue Card\r\nYellowCard\r\nRed Card\r\nTurnover",
       "AnswerExplanation": "An opposing player jerking the Quaffle behind a reset line does not trigger the reset used, as long as the driving team makes it go back as soon as possible.",
       "NGB": "ALL",
       "Link": "https://gfycat.com/ifr/wildhotargali"
@@ -1082,7 +1078,7 @@
       "PublicId": "14",
       "QuestionText": "ResetDeadQuaffle",
       "GoodAnswers": "Reset used",
-      "BadAnswers": "No penalty\r\nCards\r\nTurnover",
+      "BadAnswers": "No penalty\r\nBlue Card\r\nYellowCard\r\nRed Card\r\nTurnover",
       "AnswerExplanation": "A loose quaffle does not require a receiver to be reset.",
       "NGB": "ALL",
       "Link": "https://gfycat.com/ifr/waterycontentgelada"
@@ -1091,7 +1087,7 @@
       "PublicId": "15",
       "QuestionText": "ResetAfterGetBack",
       "GoodAnswers": "No penalty",
-      "BadAnswers": "Reset used\r\nCards\r\nTurnover",
+      "BadAnswers": "Reset used\r\nBlue Card\r\nYellowCard\r\nRed Card\r\nTurnover",
       "AnswerExplanation": "The player who initiates a drive may carry or propel the quaffle backward\r\nacross one or both restrictor lines immediately upon the beginning of the\r\ndrive without it counting as a reset.",
       "NGB": "ALL",
       "Link": "https://gfycat.com/ifr/legalyellowishamazondolphin"

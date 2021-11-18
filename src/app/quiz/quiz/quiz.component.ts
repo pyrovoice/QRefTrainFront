@@ -33,7 +33,7 @@ export class QuizComponent implements OnInit {
     // this.quizService.getQuestions(this.selectedOptions).subscribe(response => {
     //   this.questions = this.getQuestionsFromDTO(response);
     // });
-    await this.localQuizService.getQuestions().then(questions => {
+    await this.localQuizService.getQuestions(10).then(questions => {
        this.questions = questions;
     })
     this.updateURL();
@@ -67,6 +67,9 @@ export class QuizComponent implements OnInit {
   }
 
   getSourceURL(url: String) {
+    if(url == null || url == ""){
+      return this.sanitizer.bypassSecurityTrustResourceUrl("");
+    }
     return this.sanitizer.bypassSecurityTrustResourceUrl(url + '?autoplay=0');
   }
 }

@@ -1,20 +1,20 @@
 <nav class="navbar d-flex flex-nowrap justify-content-between align-items-stretch border-bottom">
-  <div class="flex-grow-1 strong-font">{{currentQuestion.questionText}}</div>
-  <div title="Report question (coming later)" class="pl-3 pr-3 pt-2 pb-2 text-danger border-left"><fa-icon [icon]="dangerIcon" size="2x"></fa-icon></div>
+  <div class="flex-grow-1 strong-font ml-1 mr-1 mt-auto mb-auto">{{currentQuestion.questionText}}</div>
+  <div title="Report question (coming later)" class="p-3 text-danger border-left"><fa-icon [icon]="dangerIcon" size="2x"></fa-icon></div>
 </nav>
 <div class="container mt-2">
   <div class="responsive-container mb-2">
     <iframe [src]="currentVideoURL" frameborder='0' scrolling='no' ></iframe>
   </div>
   <div class="d-flex flex-wrap justify-content-between">
-    <label *ngFor="let a of currentQuestion.answers" class="btn btn-light button-flex mr-1" [ngClass]="a.isSelected ? 'answerSelected' : ''">
-      <input type="checkbox" id="input" [value]="a.id" [(ngModel)]="a.isSelected">{{a.text}}
+    <label *ngFor="let a of currentQuestion.answers" class="btn btn-light button-flex mr-1" [ngClass]="[a.isSelected ? 'answerSelected' : '', a.text.length > 45 ? 'tallBox' : '']">
+      <input type="checkbox" id="input" [value]="a.id" [(ngModel)]="a.isSelected"><span class="mt-auto mb-auto">{{a.text}}</span>
     </label> 
   </div>
 </div>
 <nav class="navbar fixed-bottom d-flex justify-content-between align-items-stretch">
-  <div class="flex-grow-1 border" (click)="moveCurrentQuestion(-1)">Previous</div>
-  <div *ngFor="let q of questions; let i = index" class="flex-grow-1 border" [title]="q.questionText"
+  <div class="flex-grow-1 border flex-basis div-button" (click)="moveCurrentQuestion(-1)">Previous</div>
+  <div *ngFor="let q of questions; let i = index" class="flex-grow-1 border d-none d-lg-block div-button" [title]="q.questionText"
     [ngClass]="isQuestionCurrentlySelected(i) ? 'bg-primary' : ''" (click)="setCurrentQuestion(i)">{{i + 1}}</div>
-  <div class="flex-grow-1 border" (click)="moveCurrentQuestion(1)">Next</div>
+  <div class="flex-grow-1 border flex-basis div-button" (click)="moveCurrentQuestion(1)">Next</div>
 </nav>

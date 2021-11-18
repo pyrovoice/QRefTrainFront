@@ -40,6 +40,10 @@ export class MainPageComponent implements OnInit {
     this.router.navigate(['/quiz'], { queryParams: { topic: this.selectedOptions } });
   }
 
+  startStrategy(){
+    this.router.navigate(['/strategy']);
+  }
+
   isSelected(value){
     return this.selectedOptions.indexOf(value) != -1;
   }
