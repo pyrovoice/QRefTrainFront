@@ -1,0 +1,23 @@
+<div class="m-1 border-left border-right border-bottom" *ngFor="let topics of topics()">
+    <div class="font-weight-bold title pt-2 pb-2">{{topics}}</div>
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <td>publicId</td>
+                <td>questionText</td>
+                <td>answers</td>
+                <td>answerExplanation</td>
+                <td>URLVideo</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let question of getQuestionsForTopic(topics)">
+                <td>{{question.publicId}}</td>
+                <td>{{question.questionText}}</td>
+                <td><p *ngFor="let answer of question.answers" class="text-left" [ngClass]="answer.isGoodAnswer ? 'text-success' : 'text-danger'">{{answer.text}}</p></td>
+                <td>{{question.answerExplanation}}</td>
+                <td><a [href]="question.URLVideo" target="_blank">{{question.URLVideo}}</a></td>
+            </tr>
+        </tbody>
+    </table> 
+</div>

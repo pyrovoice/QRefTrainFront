@@ -12,13 +12,15 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatMenuModule } from '@angular/material/menu';
 import { ControlsComponent } from './canvas/controls/controls.component';
 import {MatFormFieldModule} from '@angular/material/form-field';
+import { QuestionListComponent } from './question-list/question-list.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     CanvasComponent,
-    ControlsComponent
+    ControlsComponent,
+    QuestionListComponent
   ],
   imports: [
     BrowserModule,

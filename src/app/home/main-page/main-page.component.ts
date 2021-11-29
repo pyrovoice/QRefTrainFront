@@ -44,6 +44,10 @@ export class MainPageComponent implements OnInit {
     this.router.navigate(['/strategy']);
   }
 
+  startQuestionList(){
+    this.router.navigate(['/questionlist']);
+  }
+
   isSelected(value){
     return this.selectedOptions.indexOf(value) != -1;
   }

@@ -1,3 +1,4 @@
+import { QuestionListComponent } from './question-list/question-list.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { CanvasComponent } from './canvas/canvas.component';
@@ -12,6 +13,9 @@ const routes: Routes = [
   },
   {
     path: 'admin', loadChildren: () => import('./admin/admin.module').then(m => m.AdminModule)
+  },
+  {
+    path: 'questionlist', component: QuestionListComponent
   },
   {
     path: 'strategy', component: CanvasComponent
