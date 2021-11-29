@@ -1,14 +1,5 @@
 {
   "projects": {
-    "default": "quidhub"
-  },
-  "targets": {
-    "quidhub": {
-      "hosting": {
-        "quidhub": [
-          "quidhub"
-        ]
-      }
-    }
+    "default": "quidhub-fbf4a"
   }
 }
