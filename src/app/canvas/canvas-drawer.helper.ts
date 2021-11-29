@@ -11,7 +11,7 @@ export class CanvasDrawer{
     ballSize = 8;
     ballDistanceToPlayerx = 20;
     playerHeadbandSize = 4;
-    nameDistanceToPlayer = 30;
+    nameDistanceToPlayer = 23;
 
     constructor(context: CanvasRenderingContext2D) {
         this.context = context;
@@ -57,7 +57,7 @@ export class CanvasDrawer{
 
         if (human.hasBall) {
             this.context.beginPath();
-            var ballOffset = human.team.facingTop ? this.ballDistanceToPlayerx : -this.ballDistanceToPlayerx;
+            var ballOffset = (human.team.facingTop ? this.ballDistanceToPlayerx : -this.ballDistanceToPlayerx);
             this.context.arc(center.x + 5, center.y - ballOffset, this.ballSize, 0, 2 * Math.PI, false);
             this.context.fillStyle = this.getBallColorForPosition(human.playerClass);
             this.context.fill();
@@ -77,7 +77,7 @@ export class CanvasDrawer{
         } */
 
         if(human.name != null && human.name != "" ){
-            var nameOffest = human.team.facingTop ? this.nameDistanceToPlayer : -this.nameDistanceToPlayer;
+            var nameOffest = (human.team.facingTop ? this.nameDistanceToPlayer : -this.nameDistanceToPlayer) + 5;
             this.context.lineWidth = 1;
             this.context.strokeStyle  = "#000000";
             this.context.font = "12px Arial";

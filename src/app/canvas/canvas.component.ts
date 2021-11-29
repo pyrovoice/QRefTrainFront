@@ -47,19 +47,19 @@ export class CanvasComponent implements AfterViewInit {
     @ViewChild(MatMenuTrigger) trigger: MatMenuTrigger;
     blueTeam: Team = {facingTop: false, teamColor: "#0000ff"}
     redTeam: Team = {facingTop: true, teamColor: "#ff0000"}
-    humans: Human[] = [{name:"", team: this.redTeam, playerClass: PlayerClass.CHASER, hasBall: false, position: { x: 401, y: 158 }},
-    { name:"", team: this.redTeam, playerClass: PlayerClass.BEATER, hasBall: true, position: { x: 342, y: 650 } },
-    { name:"", team: this.redTeam, playerClass: PlayerClass.BEATER, hasBall: false, position: { x: 446, y: 650 } },
-    { name:"RENAME ME", team: this.redTeam, playerClass: PlayerClass.KEEPER, hasBall: true, position: { x: 398, y: 700 } },
-    { name:"", team: this.redTeam, playerClass: PlayerClass.CHASER, hasBall: false, position: { x: 670, y: 604 } },
-    { name:"", team: this.redTeam, playerClass: PlayerClass.CHASER, hasBall: false, position: { x: 99, y: 588 } },
+    humans: Human[] = [{name:"Red Chaser 3", team: this.redTeam, playerClass: PlayerClass.CHASER, hasBall: false, position: { x: 401, y: 158 }},
+    { name:"Red Beater 1", team: this.redTeam, playerClass: PlayerClass.BEATER, hasBall: true, position: { x: 342, y: 650 } },
+    { name:"Red Beater 2", team: this.redTeam, playerClass: PlayerClass.BEATER, hasBall: false, position: { x: 446, y: 650 } },
+    { name:"Red Keeper", team: this.redTeam, playerClass: PlayerClass.KEEPER, hasBall: true, position: { x: 398, y: 700 } },
+    { name:"Red Chaser 2", team: this.redTeam, playerClass: PlayerClass.CHASER, hasBall: false, position: { x: 670, y: 604 } },
+    { name:"Red Chaser 1", team: this.redTeam, playerClass: PlayerClass.CHASER, hasBall: false, position: { x: 99, y: 588 } },
 
-    { name:"", team: this.blueTeam, playerClass: PlayerClass.CHASER, hasBall: false, position: { x: 123, y: 559 } },
-    { name:"", team: this.blueTeam, playerClass: PlayerClass.CHASER, hasBall: false, position: { x: 643, y: 560 } },
-    { name:"", team: this.blueTeam, playerClass: PlayerClass.CHASER, hasBall: false, position: { x: 405, y: 582 } },
-    { name:"", team: this.blueTeam, playerClass: PlayerClass.KEEPER, hasBall: false, position: { x: 405, y: 373 } },
-    { name:"", team: this.blueTeam, playerClass: PlayerClass.BEATER, hasBall: true, position: { x: 278, y: 501 } },
-    { name:"", team: this.blueTeam, playerClass: PlayerClass.BEATER, hasBall: true, position: { x: 483, y: 501 } }]
+    { name:"Blue Chaser 1", team: this.blueTeam, playerClass: PlayerClass.CHASER, hasBall: false, position: { x: 123, y: 559 } },
+    { name:"Blue Chaser 2", team: this.blueTeam, playerClass: PlayerClass.CHASER, hasBall: false, position: { x: 643, y: 560 } },
+    { name:"Blue Chaser 3", team: this.blueTeam, playerClass: PlayerClass.CHASER, hasBall: false, position: { x: 405, y: 582 } },
+    { name:"Blue Keeper", team: this.blueTeam, playerClass: PlayerClass.KEEPER, hasBall: false, position: { x: 405, y: 373 } },
+    { name:"Blue Beater 1", team: this.blueTeam, playerClass: PlayerClass.BEATER, hasBall: true, position: { x: 278, y: 501 } },
+    { name:"Blue Beater 2", team: this.blueTeam, playerClass: PlayerClass.BEATER, hasBall: true, position: { x: 483, y: 501 } }]
     selectedMoveables: Human[]  = [];
 
     canvasDrawer: CanvasDrawer;
@@ -121,12 +121,13 @@ export class CanvasComponent implements AfterViewInit {
         }
         if(event.button == 2){
             if(this.lastMouseDownRightClick.clientX == coordinates.x && this.lastMouseDownRightClick.clientY == coordinates.y  ){
-                this.openMenu(coordinates.x, coordinates.y);
+                //this.openMenu(coordinates.x, coordinates.y);
             }else if(this.arrowFromTo != null){
                 var closestResult = this.getClosestNear(this.arrowFromTo.to.x, this.arrowFromTo.to.y);
                 if(closestResult && closestResult.distance < this.selectRange && closestResult.object !== undefined){
                     this.passBall(this.selectedMoveables[0], closestResult.object)
                 }
+                console.log("arrowNull")
                 this.arrowFromTo = null;
             }
             this.lastMouseDownRightClick = null;
@@ -156,6 +157,7 @@ export class CanvasComponent implements AfterViewInit {
     }
 
     updateArrowFromTo(source: Human, target: Coordinates){
+        console.log("update arrowFromTo")
         this.arrowFromTo = {from: source.position, to: target}
     }
 
