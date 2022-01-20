@@ -24,15 +24,20 @@ export class LocalQuizService {
   return this.questions;
 }
 
-  async getQuestions(nbrQuestion: number, topics?: QuestionSubject[]): Promise<Question[]> {
+  async getQuestions(nbrQuestion: number, topics?: QuestionSubject[], withVideo?: Boolean): Promise<Question[]> {
     if(this.questions == null){
         await this.adminService.loadNonDepreciatedQuestions().then(questions => {
           this.questions = questions;
         })
     }
-    const shuffled = this.questions.sort(() => 0.5 - Math.random());
-
-  let selected = shuffled.slice(0, nbrQuestion);
-  return selected;
-}
+    let shuffled = this.questions.sort(() => 0.5 - Math.random());
+    if(topics && topics.length > 0){
+      shuffled = shuffled.filter(q => topics.find(s => s == q.questionSubject));
+    }
+    if(withVideo){
+      shuffled = shuffled.filter(q => q.URLVideo != null);
+    }
+    let selected = shuffled.slice(0, nbrQuestion);
+    return selected;
+  }
 }

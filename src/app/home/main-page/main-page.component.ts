@@ -9,13 +9,12 @@ import { Router } from '@angular/router';
   styleUrls: ['./main-page.component.scss']
 })
 export class MainPageComponent implements OnInit {
-
+  sidebarOpen = true;
   questionSubject = QuestionSubject;
-  topics(): Array<string> {
-    return Object.keys(this.questionSubject);
-  }
+  topics: Array<QuestionSubject> = [QuestionSubject.Contacts, QuestionSubject.Keeper, QuestionSubject.FieldsAndEquipment, QuestionSubject.OutOfBoundaries, QuestionSubject.ImmunityAndGuarding, QuestionSubject.Reset];
   displayOptions = false;
   selectedOptions = [];
+  selectedQuestionWithVideo = false;
 
   constructor(private router: Router) {
   }
@@ -37,7 +36,7 @@ export class MainPageComponent implements OnInit {
   }
 
   startQuiz(){
-    this.router.navigate(['/quiz'], { queryParams: { topic: this.selectedOptions } });
+    this.router.navigate(['/quiz'], { queryParams: { topic: this.selectedOptions, selectedQuestionWithVideo: this.selectedQuestionWithVideo } });
   }
 
   startStrategy(){

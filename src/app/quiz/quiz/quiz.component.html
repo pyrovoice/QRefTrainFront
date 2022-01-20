@@ -1,20 +1,23 @@
 <nav class="navbar d-flex flex-nowrap justify-content-between align-items-stretch border-bottom">
   <div class="flex-grow-1 strong-font ml-1 mr-1 mt-auto mb-auto">{{currentQuestion.questionText}}</div>
-  <div title="Report question (coming later)" class="p-3 text-danger border-left"><fa-icon [icon]="dangerIcon" size="2x"></fa-icon></div>
+  <div title="Report question (coming later)" class="p-3 text-danger border-left btn btn-link d-none d-sm-block"><fa-icon [icon]="dangerIcon" size="2x"></fa-icon></div>
+  <div title="Report question (coming later)" class="p-1 text-danger border-left btn btn-link d-block d-sm-none"><fa-icon [icon]="dangerIcon" size="2x"></fa-icon><div class="">Report</div></div>
 </nav>
 <div class="container mt-2">
-  <div class="responsive-container mb-2">
-    <iframe [src]="currentVideoURL" frameborder='0' scrolling='no' ></iframe>
+  <div class="responsive-container mb-1" [ngClass]="[this.currentQuestion.URLVideo == '' ? 'd-none' : '']">
+    <iframe [src]="currentVideoURL" frameborder='0' scrolling='no' showinfo="0"></iframe>
   </div>
-  <div class="d-flex flex-wrap justify-content-between">
-    <label *ngFor="let a of currentQuestion.answers" class="btn btn-light button-flex mr-1" [ngClass]="[a.isSelected ? 'answerSelected' : '', a.text.length > 45 ? 'tallBox' : '']">
+  <div class="grid">
+    <label *ngFor="let a of currentQuestion.answers" class="btn btn-light mr-1" [ngClass]="[a.isSelected ? 'answerSelected' : '']">
       <input type="checkbox" id="input" [value]="a.id" [(ngModel)]="a.isSelected"><span class="mt-auto mb-auto">{{a.text}}</span>
     </label> 
   </div>
 </div>
 <nav class="navbar fixed-bottom d-flex justify-content-between align-items-stretch">
   <div class="flex-grow-1 border flex-basis div-button" (click)="moveCurrentQuestion(-1)">Previous</div>
-  <div *ngFor="let q of questions; let i = index" class="flex-grow-1 border d-none d-lg-block div-button" [title]="q.questionText"
+  <div *ngFor="let q of questions; let i = index" class="flex-grow-1 border d-none d-sm-flex div-button" [title]="q.questionText"
     [ngClass]="isQuestionCurrentlySelected(i) ? 'bg-primary' : ''" (click)="setCurrentQuestion(i)">{{i + 1}}</div>
-  <div class="flex-grow-1 border flex-basis div-button" (click)="moveCurrentQuestion(1)">Next</div>
+  <div *ngIf="isCurrentLastQuestion()" class="flex-grow-1 border flex-basis div-button" (click)="moveCurrentQuestion(1)">Next</div>
+  <div *ngIf="!isCurrentLastQuestion();" class="flex-grow-1 border flex-basis div-button result-button" (click)="goToResult()">Result</div>
 </nav>
+  

@@ -3,7 +3,7 @@ import { NationalGoverningBody } from './national-governing-body.model';
 import { Answer } from './answer.model';
 
 export interface Question {
-     publicId: Number;
+     publicId: String;
      questionSubject: QuestionSubject;
      URLVideo?: String;
      questionText: String;

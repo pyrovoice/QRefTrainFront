@@ -45,7 +45,7 @@ export class AdminService {
 
   getQuestionFromJson(question: any, subject: any) {
     let q: Question = {questionText: question["QuestionText"], 
-      publicId: subject + question["Public Id"], 
+      publicId: subject + "-" + question["Public Id"], 
       questionSubject: subject,
       NGB: this.getNGB(question["NGB"]), 
       answers: this.getAnswers(question["GoodAnswers"], 

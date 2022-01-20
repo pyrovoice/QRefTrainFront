@@ -4,6 +4,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { FormBuilder } from '@angular/forms';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { MatMenuModule } from '@angular/material/menu';
+import {MatSidenavModule} from '@angular/material/sidenav';
 
 
 @NgModule({
@@ -13,11 +14,13 @@ import { MatMenuModule } from '@angular/material/menu';
         CommonModule,
         NgbModule,
         FontAwesomeModule,
-        MatMenuModule
+        MatMenuModule,
+        MatSidenavModule
     ],
     exports: [
         CommonModule,
-        FontAwesomeModule
+        FontAwesomeModule,
+        MatSidenavModule
     ],
     providers: [
         FormBuilder
