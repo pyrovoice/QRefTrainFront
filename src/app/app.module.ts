@@ -1,3 +1,4 @@
+import { MatcheventModule } from './matchevent/matchevent.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -21,6 +22,7 @@ import { QuestionListComponent } from './question-list/question-list.component';
     CanvasComponent,
     ControlsComponent,
     QuestionListComponent
+    
   ],
   imports: [
     BrowserModule,
@@ -31,7 +33,8 @@ import { QuestionListComponent } from './question-list/question-list.component';
     FontAwesomeModule,
     BrowserAnimationsModule,
     MatMenuModule,
-    MatFormFieldModule
+    MatFormFieldModule,
+    
   ],
   providers: [
     {

@@ -2,6 +2,7 @@ import { QuestionListComponent } from './question-list/question-list.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { CanvasComponent } from './canvas/canvas.component';
+import { MatcheventModule } from './matchevent/matchevent.module';
 
 
 const routes: Routes = [
@@ -19,6 +20,9 @@ const routes: Routes = [
   },
   {
     path: 'strategy', component: CanvasComponent
+  },
+  {
+    path: 'matchevent', loadChildren: () => import('./matchevent/matchevent.module').then(m => m.MatcheventModule)
   },
   {
     path: '', redirectTo: 'homepage', pathMatch: 'full'
