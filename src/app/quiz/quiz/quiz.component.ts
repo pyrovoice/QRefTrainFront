@@ -74,7 +74,7 @@ export class QuizComponent implements OnInit {
     if(url == null || url == ""){
       return this.sanitizer.bypassSecurityTrustResourceUrl("");
     }
-    return this.sanitizer.bypassSecurityTrustResourceUrl("https://gfycat.com/ifr/search/" + url + '?autoplay=1');
+    return this.sanitizer.bypassSecurityTrustResourceUrl(url + "");
   }
 
   goToResult(){

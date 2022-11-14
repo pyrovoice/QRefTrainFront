@@ -29,6 +29,7 @@
     "@ng-bootstrap/ng-bootstrap": "^6.0.2",
     "bootstrap": "^4.4.1",
     "cors": "^2.8.5",
+    "discord.io": "^2.5.3",
     "jquery": "^3.4.1",
     "rxjs": "~6.5.4",
     "tslib": "^1.11.1",
