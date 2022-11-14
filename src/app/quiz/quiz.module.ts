@@ -5,12 +5,10 @@ import { QuizRoutingModule } from './quiz-routing.module';
 import { QuizComponent } from './quiz/quiz.component';
 import { FormsModule } from '@angular/forms';
 import { SharedModule } from '../shared/shared.module';
-import { ResultpageComponent } from './resultpage/resultpage.component';
-import { ResulterrorpageComponent } from './resulterrorpage/resulterrorpage.component';
 
 
 @NgModule({
-  declarations: [QuizComponent, ResultpageComponent, ResulterrorpageComponent],
+  declarations: [QuizComponent],
   imports: [
     CommonModule,
     QuizRoutingModule,
