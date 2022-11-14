@@ -1,0 +1,5 @@
+<div>Your score: N/10</div>
+<a (click)="copyResultToClipboard()">share your result</a>
+<div *ngFor="let question of questions; let i = index">
+    {{question.questionText}}
+</div>
