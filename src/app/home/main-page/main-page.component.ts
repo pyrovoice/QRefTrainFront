@@ -47,6 +47,10 @@ export class MainPageComponent implements OnInit {
     this.router.navigate(['/questionlist']);
   }
 
+  startMatchAnalysis(){
+    this.router.navigate(['/matchevent']);
+  }
+
   isSelected(value){
     return this.selectedOptions.indexOf(value) != -1;
   }

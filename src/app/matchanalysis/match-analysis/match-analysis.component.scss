@@ -1,0 +1,38 @@
+table {
+  width: 100%;
+}
+
+tr.example-detail-row {
+  height: 0;
+}
+
+tr.selectable-element:hover {
+  background: rgb(174, 174, 174);
+  cursor: pointer;
+}
+
+tr.selectable-element:not(.example-expanded-row):active {
+  background: #efefef;
+}
+
+.selectable-element td {
+  border-bottom-width: 0;
+}
+
+.example-element-detail {
+  overflow: hidden;
+  display: flex;
+}
+
+.active-row {
+  background: rgb(219, 219, 219);
+}
+
+.inner-table {
+  width: 100%;
+}
+
+.inner-table mat-form-field {
+  margin-top: 15px;
+  width: 100%;
+}

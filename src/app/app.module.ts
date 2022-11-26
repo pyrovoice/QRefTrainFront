@@ -1,4 +1,4 @@
-import { MatcheventModule } from './matchevent/matchevent.module';
+import { MatchAnalysisModule } from './matchevent/matchanalysis.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -14,6 +14,8 @@ import { MatMenuModule } from '@angular/material/menu';
 import { ControlsComponent } from './canvas/controls/controls.component';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import { QuestionListComponent } from './question-list/question-list.component';
+import { MatInputModule } from '@angular/material/input';
+import { MatSortModule } from '@angular/material/sort';
 
 
 @NgModule({
@@ -34,7 +36,8 @@ import { QuestionListComponent } from './question-list/question-list.component';
     BrowserAnimationsModule,
     MatMenuModule,
     MatFormFieldModule,
-    
+    MatInputModule,
+    MatSortModule
   ],
   providers: [
     {

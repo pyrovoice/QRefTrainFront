@@ -1,0 +1,65 @@
+<div class="row">
+   <div class="col">
+      <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+
+         <ng-container matColumnDef="playerNumber">
+            <th mat-header-cell *matHeaderCellDef>#</th>
+            <td mat-cell *matCellDef="let element"> {{element.playerNumber}} </td>
+         </ng-container>
+
+         <ng-container matColumnDef="time">
+            <th mat-header-cell *matHeaderCellDef>Time</th>
+            <td mat-cell *matCellDef="let element"> {{element.timeMinute}}:{{element.timeSecond}} </td>
+         </ng-container>
+
+         <ng-container matColumnDef="matchEventType">
+            <th mat-header-cell *matHeaderCellDef>matchEventType</th>
+            <td mat-cell *matCellDef="let element"> {{element.matchEventType}} </td>
+         </ng-container>
+
+         <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+         <tr mat-row *matRowDef="let row; columns: displayedColumns;" (click)="selectMatchEvent(row)"
+            [ngClass]="{ 'selected-row' : row == currentlySelectedMatchEvent }"></tr>
+      </table>
+
+      <div class="example-button-container">
+         <button mat-fab color="primary" aria-label="Example icon button with a delete icon"
+            (click)="addNewMatchEvent()">
+            <mat-icon>add</mat-icon>
+         </button>
+      </div>
+   </div>
+
+   <div class="col">
+      <div class="container">
+         <h1>Product Form</h1>
+         <form #matchEventForm="ngForm">
+            <div class="form-group">
+               <label for="Time">Time</label>
+               <div class="row">
+                  <div class="col"><input type="number" class="form-control" id="timeMinute" required
+                        [(ngModel)]="currentlySelectedMatchEvent.timeMinute" name="timeMinute"></div>
+                  <div class="col-1">:</div>
+                  <div class="col"><input type="number" class="form-control" id="timeSecond" required
+                        [(ngModel)]="currentlySelectedMatchEvent.timeSecond" name="timeSecond"></div>
+               </div>
+            </div>
+
+            <div class="form-group">
+               <label for="name">Player Number</label>
+               <input type="text" class="form-control" id="playerNumber" required
+                  [(ngModel)]="currentlySelectedMatchEvent.playerNumber" name="playerNumber">
+            </div>
+
+            <mat-form-field>
+               <mat-label>Event type</mat-label>
+               <mat-select name="matchEventType" id="matchEventType"
+                  [(ngModel)]="currentlySelectedMatchEvent.matchEventType">
+                  <mat-option *ngFor="let type of MatchEventType  | keyvalue" [value]="type.value">{{ type.value }}
+                  </mat-option>
+               </mat-select>
+            </mat-form-field>
+         </form>
+      </div>
+   </div>
+</div>

@@ -1,0 +1,18 @@
+<form #matchEventForm="ngForm">
+
+   <mat-form-field>
+      <mat-label>Event type</mat-label>
+      <mat-select name="matchEventType" id="matchEventType" [(ngModel)]="matchEvent.matchEventType">
+         <mat-option *ngFor="let type of MatchEventType  | keyvalue" [value]="type.value">{{ type.value }}
+         </mat-option>
+      </mat-select>
+   </mat-form-field>
+
+
+   <div class="form-group">
+      <label for="name">Player Number</label>
+      <input type="text" class="form-control" id="playerNumber" required [(ngModel)]="matchEvent.playerNumber"
+         name="playerNumber">
+   </div>
+   <app-position-selector></app-position-selector>
+</form>

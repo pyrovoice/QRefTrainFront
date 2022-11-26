@@ -6,3 +6,7 @@ table{
     background-color: lightgray;
 }
 table tr th { text-align:center; }
+
+tr.example-element-row:not(.example-expanded-row):hover {
+    background: #777;
+}

@@ -1,0 +1,23 @@
+
+ <form #matchEventForm="ngForm">
+    <div class="form-group">
+       <label for="Time">Time (s)</label>
+       <div class="col"><input type="number" class="form-control" id="startTimeSecond" required
+             [(ngModel)]="$any(selectedElement).startTimeSecond" name="startTimeSecond"></div>
+    </div>
+
+    <mat-form-field>
+       <mat-label>Attacking</mat-label>
+       <mat-select name="isAAttacking" id="isAAttacking" [(ngModel)]="$any(selectedElement).attackingTeam">
+          <mat-option [value]="teamsService.teamA.name">{{ teamsService.teamA.name }} </mat-option>
+          <mat-option [value]="teamsService.teamB.name">{{ teamsService.teamB.name }} </mat-option>
+       </mat-select>
+    </mat-form-field>
+    <mat-form-field>
+       <mat-label>Bludger Control</mat-label>
+       <mat-select name="BCTeamA" id="BCTeamA" [(ngModel)]="$any(selectedElement).TeamWithBC">
+          <mat-option [value]="teamsService.teamA.name">{{ teamsService.teamA.name }} </mat-option>
+          <mat-option [value]="teamsService.teamB.name">{{ teamsService.teamB.name }} </mat-option>
+       </mat-select>
+    </mat-form-field>
+ </form>

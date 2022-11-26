@@ -1,7 +1,7 @@
-import { MatchEvent } from './../model/matchevent';
+import { MatchEvent } from '../model/matchevent.model';
 import { Component, OnInit } from '@angular/core';
 import { MatTableDataSource } from '@angular/material/table';
-import { MatchEventType } from '../model/matcheventtype';
+import { MatchEventType } from '../model/matcheventtype.enum';
 
 @Component({
   selector: 'app-matchevent-main',
@@ -30,7 +30,7 @@ export class MatcheventMainComponent implements OnInit {
   }
 
   getDefaultInstanceMatchEvent() {
-    return new MatchEvent(0, 0, "00", MatchEventType.Pass, "", "");
+    return new MatchEvent(0, 0, "00", MatchEventType.Pass, "", "", null);
   }
 
   selectMatchEvent(matchEvent:MatchEvent){

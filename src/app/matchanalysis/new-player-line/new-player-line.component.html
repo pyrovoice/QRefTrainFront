@@ -1,0 +1,20 @@
+<div class="d-flex">
+    <input type="text" [(ngModel)]="player.playerNumber" /> 
+    <mat-form-field>
+        <mat-label>Player Assigned Sexe</mat-label>
+        <mat-select name="playerSexe" id="playerSexe"
+           [(ngModel)]="player.playerSexe">
+           <mat-option *ngFor="let type of PlayerSexe  | keyvalue" [value]="type.value">{{ type.value }}
+           </mat-option>
+        </mat-select>
+     </mat-form-field>
+     <mat-form-field>
+        <mat-label>Main Position</mat-label>
+        <mat-select name="position" id="position"
+           [(ngModel)]="player.playerPosition">
+           <mat-option *ngFor="let type of PlayerPosition  | keyvalue" [value]="type.value">{{ type.value }}
+           </mat-option>
+        </mat-select>
+     </mat-form-field>
+     <input type="text" [(ngModel)]="player.playerName" placeholder="Player name (if known)" /> 
+</div>
