@@ -1,5 +1,5 @@
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
-import { FormGroup, FormBuilder, Validators } from '@angular/forms';
+import { UntypedFormGroup, UntypedFormBuilder, Validators } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
 import { AuthenticationService } from 'src/app/shared/service/authentication.service';
 import { first } from 'rxjs/operators';
@@ -10,7 +10,7 @@ import { first } from 'rxjs/operators';
   styleUrls: ['./logging-page.component.scss']
 })
 export class LoggingPageComponent implements OnInit {
-  loginForm: FormGroup;
+  loginForm: UntypedFormGroup;
   loading = false;
   returnUrl: string;
   error = '';
@@ -19,7 +19,7 @@ export class LoggingPageComponent implements OnInit {
   @Output() emitterChangePassword = new EventEmitter<any>();
 
   constructor(
-    private formBuilder: FormBuilder,
+    private formBuilder: UntypedFormBuilder,
     private route: ActivatedRoute,
     private authenticationService: AuthenticationService,
     private router: Router

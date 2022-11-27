@@ -1,5 +1,5 @@
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
-import { FormGroup, FormBuilder, Validators } from '@angular/forms';
+import { UntypedFormGroup, UntypedFormBuilder, Validators } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
 import { AuthenticationService } from 'src/app/shared/service/authentication.service';
 import { first } from 'rxjs/operators';
@@ -11,7 +11,7 @@ import { MustMatch } from '../helpers/must-match.validator';
   styleUrls: ['./register-page.component.scss']
 })
 export class RegisterPageComponent implements OnInit {
-  loginForm: FormGroup;
+  loginForm: UntypedFormGroup;
   loading = false;
   returnUrl: string;
   error = '';
@@ -21,7 +21,7 @@ export class RegisterPageComponent implements OnInit {
   get f() { return this.loginForm.controls; }
 
   constructor(
-    private formBuilder: FormBuilder,
+    private formBuilder: UntypedFormBuilder,
     private route: ActivatedRoute,
     private authenticationService: AuthenticationService,
     private router: Router

@@ -1,5 +1,5 @@
 import { Component, EventEmitter, Input, OnChanges, OnInit, Output, SimpleChanges } from '@angular/core';
-import { FormControl, FormGroup } from '@angular/forms';
+import { UntypedFormControl, UntypedFormGroup } from '@angular/forms';
 import { Controls, Human, PlayerClass } from '../canvas.component';
 
 @Component({
@@ -15,17 +15,17 @@ export class ControlsComponent implements OnInit {
   enumPlayerClass = PlayerClass;
   enumKeys;
 
-  newPlayerForm: FormGroup;
+  newPlayerForm: UntypedFormGroup;
   constructor() { }
 
   ngOnInit(): void {
     this.enumKeys = Object.keys(this.enumPlayerClass).filter(f => isNaN(Number(f)));
 
-    this.newPlayerForm = new FormGroup({
-      name: new FormControl(),
-      team: new FormControl(),
-      hasBall: new FormControl(),
-      playerClass: new FormControl(),
+    this.newPlayerForm = new UntypedFormGroup({
+      name: new UntypedFormControl(),
+      team: new UntypedFormControl(),
+      hasBall: new UntypedFormControl(),
+      playerClass: new UntypedFormControl(),
     });
   }
 
